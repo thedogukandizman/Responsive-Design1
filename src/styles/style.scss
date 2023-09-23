@@ -1,0 +1,6 @@
+@use "./variables/colors";
+
+body {
+  background-color: colors.$bg-body-color;
+  
+}
