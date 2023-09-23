@@ -1,0 +1,14 @@
+.pinned-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    grid-template-areas: 
+    "card1 card1 card2 card3"
+    "card1 card1 card4 card5";
+    div {
+        padding: 1em;
+        &:first-child {
+            grid-area: card1;
+        }
+    }
+   

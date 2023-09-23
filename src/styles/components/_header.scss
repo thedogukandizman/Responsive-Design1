@@ -1,0 +1,49 @@
+@use "../variables/colors";
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5em;
+    img {
+        width: 135px;
+    }
+    nav ul {
+        display: flex;
+        & li {
+            list-style: none;
+            padding: 10px;
+            position: relative;
+        }
+    }
+    a {
+        text-decoration: none ;
+        color: colors.$text-light-color;
+        font-size: 15px;
+        
+         &:hover::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            height: 5px;
+            background-color: colors.$text-light-color;
+            border-radius: 50%;
+        }
+         &:active::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            height: 5px;
+            background-color: colors.$orange-color;
+            border-radius: 50%;
+        }
+        
+    }
+    .fa-search {
+        color: colors.$text-light-color;
+    }
+}
+
