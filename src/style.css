@@ -263,7 +263,7 @@ header nav i {
 .load__more button {
   width: 100%;
   margin: 0;
-  height: 5rem; /* Set the height of the button */
+  height: 5rem;
   border-radius: 2rem;
   font-size: 1rem;
   background-color: #ebebeb;
@@ -271,7 +271,7 @@ header nav i {
 }
 
 .load__more button:hover {
-  background-color: #ff9ed8;
+  background-color: #9d902d;
 }
 
 .sidenav {
@@ -282,7 +282,7 @@ header nav i {
   top: 0;
   left: 0;
   background-color: #ebebeb;
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-x: hidden;
   padding-top: 20px;
 }
 
@@ -340,7 +340,7 @@ footer form input:focus {
 
 .subscribe:hover {
   transform: translateY(-2%);
-  background-color: #ff9ed8;
+  background-color: #b2c238;
 }
 
 @keyframes typing {
@@ -371,4 +371,3 @@ button {
   padding: 0.5em;
 }
 
-/*# sourceMappingURL=style.css.map */
