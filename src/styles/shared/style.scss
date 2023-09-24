@@ -1,0 +1,17 @@
+@use "components/header";
+@use "components/main";
+@use "components/footer";
+
+@use "variables/fonts";
+
+body {
+  margin: 4em;
+  background-color: rgba(64, 57, 57, 0.9);
+}
+
+button {
+  border-radius: 1em;
+  border: none;
+  font-size: fonts.$btn-text;
+  padding: 0.5em;
+}

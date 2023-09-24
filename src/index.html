@@ -1,161 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/src/style.css">
-    <title>Documentcnon</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Design</title>
 </head>
 <body>
     <header>
-        <img src="/src/imgs/maido.svg" alt="main-logo">
+        <div>
+            <img src="https://maido-dark.fueko.net/content/images/2020/06/maido.svg" alt="Maido">
+        </div>
         <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">Contacts</a></li>
-                <li><a href="">News</a></li>               
-                <li><a href="">Jobs</a></li>
-               <li> <i class="fa fa-search"></i></li>
-
-                
-            </ul>
+            <a href="#">Home</a>
+            <a href="about">About</a>
+            <a href="feature">Features</a>
+            <a href="feature">Style Guide</a>
+            <a href="feature">Contact</a>
+            <a href="feature">Newsletter</a>
+            <a href="feature">Demos</a>
+            <a href="feature">Get Theme</a>
+            <i class="fa fa-search"></i>
         </nav>
     </header>
     <main>
-        <section class="pinned-section">
-            <div>
-                <button class="btn btn--light">Pinned</button>
-                <div>
-                    <p class="sub-text">Lorem, ipsum dolor.</p>
-                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        <section class="masonry">
+            <article class="mansonry__card">
+                <button>Pinned</button>
+                <div class="mansonry__card__text">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, modi?</h3>
+                </div>
+            </article>
+            <article class="mansonry__card">
+                <button>Pinned</button>
+                <div class="mansonry__card__text">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, modi?</h3>
+                </div>
+            </article>
+            <article class="mansonry__card">
+                <div class="mansonry__card__button">
+                    <button>Pinned</button>
+                </div>
+                <div class="mansonry__card__text">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, modi?</h3>
+                </div>
+            </article>
+            <article class="mansonry__card">
 
-                </div>
-            </div>
-            <div>
-                <button class="btn btn--light">Pinned</button>
-                <div>
-                    <p class="sub-text">Lorem, ipsum dolor.</p>
-                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    
-                </div>
-            </div>
-            <div>
-                <button class="btn btn--light">Pinned</button>
-                <div>
-                    <p class="sub-text">Lorem, ipsum dolor.</p>
-                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    
-                </div>
-            </div>
-            <div>
-                <button class="btn btn--light">Pinned</button>
-                <div>
-                    <p class="sub-text">Lorem, ipsum dolor.</p>
-                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    
-                </div>
-            </div>
-            <div>
-                <button class="btn btn--light">Pinned</button>
-                <div>
-                    <p class="sub-text">Lorem, ipsum dolor.</p>
-                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    
-                </div>
-            </div>
-        </section>
+                <button>Pinned</button>
 
-        <section class="single-card-section">
-            <div>
-                <div>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
+                <div class="mansonry__card__text">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, modi?</h3>
                 </div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p class="sub-text">Lorem ipsum dolor sit amet consectetur.</p>
-            </div>  
-            <div>
-                <div>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
+            </article>
+            <article class="mansonry__card">
+
+                <button>Pinned</button>
+
+                <div class="mansonry__card__text">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, modi?</h3>
                 </div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p class="sub-text">Lorem ipsum dolor sit amet consectetur.</p>
-            </div>  
-            <div>
-                <div>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
-                </div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p class="sub-text">Lorem ipsum dolor sit amet consectetur.</p>
-            </div>  
-            <div>
-                <div>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
-                </div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p class="sub-text">Lorem ipsum dolor sit amet consectetur.</p>
-            </div>  
+            </article>
         </section>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        <section class="grid-card-section">
-            <div>
-                <div>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
+        <section class="blog">
+            <article>
+                <div class="blog__button__group">
+                    <button>Case Study</button>
+                    <button>Open Space</button>
                 </div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p class="sub-text">Lorem ipsum dolor sit amet consectetur.</p>
-            </div>  
-            <div>
-                <div>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
+                <div class="blog__content">
+                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<span>&rarr;</span></h3>
+                    <sub>Lorem ipsum dolor sit.</sub>
                 </div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p class="sub-text">Lorem ipsum dolor sit amet consectetur.</p>
-            </div>  
-            <div>
-                <div>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
+            </article>
+            <article>
+                <div class="blog__button__group">
+                    <button>Case Study</button>
+                    <button>Open Space</button>
                 </div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p class="sub-text">Lorem ipsum dolor sit amet consectetur.</p>
-            </div>  
-            <div>
-                <div>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
+                <div class="blog__content">
+                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<span>&rarr;</span></h3>
+                    <sub>Lorem ipsum dolor sit.</sub>
                 </div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p class="sub-text">Lorem ipsum dolor sit amet consectetur.</p>
-            </div>  
-            <div>
-                <div>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
-                    <button class="btn btn--transparent-light">Lorem, ipsum.</button>
+            </article>
+            <article>
+                <div class="blog__button__group">
+                    <button>Case Study</button>
+                    <button>Open Space</button>
                 </div>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p class="sub-text">Lorem ipsum dolor sit amet consectetur.</p>
-            </div>  
+                <div class="blog__content">
+                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<span>&rarr;</span></h3>
+                    <sub>Lorem ipsum dolor sit.</sub>
+                </div>
+            </article>
         </section>
-        <div class="loadmore-section">
-        <button class="btn btn--orange">-Load more</button>
-        </div>
+        <section class="post__card">
+            <article class="post__card__btn">
+                <button>Creative</button>
+                <div class="post__card__text">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, modi?</h3>
+                </div>
+            </article>
+            <article class="post__card__btn">
+                <button>Case Study</button>
+                <button>Creative</button>
+                <button>Open Space</button>
+                <div class="post__card__text">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, modi?</h3>
+                </div>
+            </article>
+        </section>
+        <section class="greeting__card">
+            <article class="greeting__card__btn">
+                <button>Creative</button>
+                <div class="post__card__text">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, modi?</h3>
+                </div>
+            </article>
+            <article class="post__card__btn">
+                <button>Case Study</button>
+                <button>Open Space</button>
+                <div class="post__card__text">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, modi?</h3>
+                </div>
+            </article>
+            <article class="post__card__btn">
+                <button>Productivity</button>
+                <button>Open Space</button>
+                <div class="post__card__text">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, modi?</h3>
+                </div>
+            </article>
+        </section>
+        <section class="load__more">
+            <button class="load__more_btn">LOAD MORE</button>
+          </section>
     </main>
+
+
     <footer>
-        <form>
+        <section class="Subscribe__section">
             <h3>Lorem ipsum dolor sit.</h3>
-            <p class="form__typing-text">Lorem ipsum dolor sit amet.</p>
-            <input type="email" placeholder="Your email address">
-            <button class="btn btn--orange">Subscribe</button>
-        </form>
+            <p>Lorem ipsum dolor sit amet.</p>
+             <form action="">
+            <input type="email" name="email" id="email" placeholder="Your email">
+            </form>
+            <button class="subscribe">SUBSCRIBE</button>
+        </section>
     </footer>
 </body>
+
 </html>
