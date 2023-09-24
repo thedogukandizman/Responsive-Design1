@@ -2,6 +2,9 @@
 
 @use "./components/header";
 @use "./components/main";
+@use "./components/footer";
+
+@use "./shared/buttons";
 
 body {
   background-color: colors.$bg-body-color;

@@ -1,18 +1,156 @@
-/* Error: expected "}".
- *    ,
- * 13 |     }
- *    |      ^
- *    '
- *   src/styles/components/_main.scss 13:6  @use
- *   src/styles/style.scss 4:1              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a    \2577 \a 13 \2502      }\a    \2502       ^\a    \2575 \a   src/styles/components/_main.scss 13:6  @use\a   src/styles/style.scss 4:1              root stylesheet';
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5em;
 }
+header img {
+  width: 135px;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+  padding: 10px;
+  position: relative;
+}
+header a {
+  text-decoration: none;
+  color: #ebebeb;
+  font-size: 15px;
+}
+header a:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #ebebeb;
+  border-radius: 50%;
+}
+header a:active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #ffb469;
+  border-radius: 50%;
+}
+header .fa-search {
+  color: #ebebeb;
+}
+
+.pinned-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  grid-template-areas: "card1 card1 card2 card3" "card1 card1 card4 card5";
+}
+.pinned-section > div {
+  background-color: antiquewhite;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 16px;
+  transition: transform 0.7s ease;
+}
+.pinned-section > div:first-child {
+  grid-area: card1;
+}
+.pinned-section > div:hover {
+  transform: translateY(-5px);
+}
+
+.single-card-section {
+  padding: 2em 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.single-card-section > div {
+  background: linear-gradient(rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5));
+  background: url("/src/imgs/photo-1558697698-9300a84a6a99.jpeg") center;
+  background-size: 100%;
+  color: #ebebeb;
+  border-radius: 16px;
+  padding: 6em 8em 6em 8em;
+  transition: background-size 1sn ease;
+}
+.single-card-section > div:hover {
+  background-size: 110%;
+}
+.single-card-section h2 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+.single-card-section p {
+  margin: 10px 0;
+}
+
+.loadmore-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3em;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6em 6em;
+}
+footer form h3 {
+  font-size: 60px;
+}
+
+.btn {
+  background-color: none;
+  border-radius: 10px;
+  border: none;
+  font-size: 11px;
+  box-shadow: none;
+  padding: 3px 5px;
+}
+
+.btn--light {
+  background-color: #ebebeb;
+  color: #100e17;
+}
+
+.btn--transparent-light {
+  background-color: transparent;
+  border: 1px solid #ebebeb;
+  color: #ebebeb;
+}
+
+.btn--transparent-dark {
+  background-color: transparent;
+  border: 1px solid #100e17;
+  color: #100e17;
+}
+
+.btn--orange {
+  padding: 1em 0em;
+  width: 98%;
+  background-color: #363643;
+  transition: 0.5s ease;
+  color: white;
+}
+.btn--orange:hover {
+  background-color: #ffb469;
+  width: 100%;
+}
+
+body {
+  background-color: #252530;
+  padding: 2em 10em;
+}
+
+/*# sourceMappingURL=style.css.map */

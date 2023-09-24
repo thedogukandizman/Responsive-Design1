@@ -1,3 +1,6 @@
+@use "../variables/fonts";
+@use "../variables/colors"; 
+
 .pinned-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -5,10 +8,57 @@
     grid-template-areas: 
     "card1 card1 card2 card3"
     "card1 card1 card4 card5";
-    div {
-        padding: 1em;
+    > div {
+        background-color: antiquewhite;
+        padding: 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-radius: 16px;
+        transition: transform 0.7s ease;
         &:first-child {
             grid-area: card1;
         }
+        &:hover{
+            transform: translateY(-5px);
+        }
+        }
     }
+.single-card-section {
+    padding: 2em 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    > div {
+        background: linear-gradient(rgba(0,0,0,0.5) rgba(0,0,0,0.5)); 
+        background: url("/src/imgs/photo-1558697698-9300a84a6a99.jpeg") center;
+        background-size: 100%;
+        color: colors.$text-light-color;
+        border-radius: 16px;
+        padding: 6em 8em 6em 8em;
+        transition: background-size 1sn ease;
+        &:hover {
+            background-size: 110%;
+        }
    
+    }
+    h2 {
+        font-size: fonts.$font-large;
+        margin: 10px 0;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+
+}
+
+.loadmore-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3em;
+    justify-content: center;
+    align-items: center;
+}

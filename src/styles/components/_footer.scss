@@ -1,0 +1,14 @@
+@use "../variables/fonts";
+
+footer {    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6em 6em;
+    form {
+        h3 {
+            font-size: fonts.$font-large;
+        }
+    }
+}

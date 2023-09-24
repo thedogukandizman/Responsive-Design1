@@ -1,0 +1,43 @@
+@use "../variables/fonts";
+@use "../variables/colors";
+
+.btn{
+    background-color: none;
+    border-radius: 10px;
+    border: none;
+    font-size: fonts.$font-small;
+    box-shadow: none;
+    padding: 3px 5px;  
+}
+
+.btn--light 
+{
+    background-color: colors.$text-light-color;
+    color: colors.$text-dark-color;
+   
+}
+.btn--transparent-light
+{
+    background-color: transparent;
+    border: 1px solid colors.$text-light-color;
+    color: colors.$text-light-color;
+}
+.btn--transparent-dark {
+    background-color: transparent;
+    border: 1px solid colors.$text-dark-color;
+    color: colors.$text-dark-color;
+}
+
+.btn--orange {
+    padding: 1em 0em;
+    width: 98%;
+    background-color: colors.$light-grey-color;
+    transition: 0.5s ease;
+    color: white; 
+    &:hover {
+        background-color: colors.$orange-color;
+        width: 100%;
+    }
+    
+
+}
